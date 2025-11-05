@@ -1,0 +1,144 @@
+/*Variables de CSS*/
+:root {
+  --primary-color-950: #020617;
+  --primary-color-900: #0f172a;
+  --primary-color-800: #1e293b;
+  --primary-color-700: #334155;
+  --primary-color-600: #475569;
+  --primary-color-500: #64748b;
+  --primary-color-400: #94a3b8;
+  --primary-color-300: #cbd5e1;
+  --primary-color-200: #e2e8f0;
+  --primary-color-100: #f1f5f9;
+  --primary-color-50: #f8fafc;
+
+  /*Action Colors*/
+  --action-color-600: #2563eb;
+  --action-color-500: #3b82f6;
+  --action-color-400: #60a5fa;
+}
+
+/*Reseteo de CSS*/
+/* Margenes */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Listas */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Imagenes */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Fuentes de inputs, botones, etc */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/InstrumentSans.ttf");
+}
+
+/*Estilos*/
+
+/*Defaults*/
+body {
+  color: var(--primary-color-100);
+  background: var(--primary-color-950);
+  font-family: "Instrument Sans", "sans-serif";
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  color: var(--primary-color-600);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  display: inline-block;
+  color: var(--action-color-500);
+  text-shadow: 0px 0px 4px rgba(96, 165, 250, 0.5);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*Navegación*/
+header {
+  color: var(--primary-color-900);
+  background-color: rgba(248, 250, 252, 0.9);
+  font-weight: bold;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.85rem 1.85rem 1rem 1.85rem;
+  z-index: 1;
+}
+
+nav {
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(248, 250, 252, 0.9);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+nav > ul {
+  color: var(--primary-color-900);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
+}
+
+/*Cuerpo*/
+.blob-decoration {
+  position: absolute;
+  top: -40%;
+  left: -60%;
+  z-index: -1;
+  filter: blur(8rem);
+  pointer-events: none;
+  height: 50rem;
+  width: auto;
+}
+
+.container {
+  padding: 2rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: var(--primary-color-400);
+}
