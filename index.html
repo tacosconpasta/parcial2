@@ -5,23 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Docker Blog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icons/docker-icon.svg"
+    />
   </head>
   <body>
     <header>
-      EL &nbsp;
-      <img
-        src="./assets/icons/docker-icon.svg"
-        style="width: auto; height: 1.75rem; color: black"
-      />
-      &nbsp; BLOG
+      <h1>
+        EL
+        <img src="./assets/icons/docker-icon.svg" />
+        BLOG
+      </h1>
     </header>
     <nav>
       <ul>
-        <li><a href="">Inicio</a></li>
+        <li><a href="/">Inicio</a></li>
         <li><a href="">Blogs</a></li>
         <li><a href="">Aprender</a></li>
         <li><a href="">Reseña</a></li>
       </ul>
     </nav>
+    <main>
+      <section id="landing">
+        <div class="container">
+          <div class="landing-content">
+            <h2>Bienvenido al mundo de la contenedorización!</h2>
+            <p>Con contenedores, todo es más fácil!</p>
+          </div>
+
+          <!--Usar <img> cachea la animación del SVG, por lo que, se debe usar object-->
+          <object
+            id="landing-animation"
+            data="./assets/icons/Docker.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+      </section>
+      <section id="introduccion">
+        <div class="container">
+          <h3>¿De qué se trata este blog?</h3>
+          <div>
+            <p style="text-align: left">
+              Este blog busca aficionados de la programación, DevOps, y de la
+              tecnología, en todo el mundo. <br /><br />
+              Se discute, comparte y divulga información sobre Docker y sobre la
+              comunidad del mundo los contenedores.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="beneficios">
+        <div class="container">
+          <h3>¿Qué beneficios obtienes?</h3>
+          <ul style="padding-left: 1rem">
+            <li>Aprender, a profundidad, sobre Docker.</li>
+            <li>Artículos sobre buenas prácticas y casos de uso reales.</li>
+            <li>Guías sobre como mejorar la experiencia del desarrollador.</li>
+            <li>Reseñas de herramientas y recursos útiles.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button" type="submit">Suscribirme</button>
+      </form>
+      <p class="disclaimer">
+        © 2025 El Blog<br />
+        © 2013-2021 Docker, Inc. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
