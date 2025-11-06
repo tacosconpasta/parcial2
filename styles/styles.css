@@ -370,6 +370,40 @@ iframe {
   border: none;
 }
 
+/*--RESEÑA--*/
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.review-top {
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 2rem;
+}
+
+@media (max-width: 428px) {
+  .review-top {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .review-top h3 {
+    text-align: center;
+  }
+}
+
+.review-top img {
+  object-fit: cover;
+  height: 4rem;
+  width: auto;
+  border-radius: 1000px;
+}
+
 /*Pie de Página*/
 footer {
   display: flex;
