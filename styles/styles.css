@@ -381,11 +381,12 @@ iframe {
 .post-top {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
 /*Subtitulo*/
 .post-container h3
+
+.post-container
 
 /*--RESEÑA--*/
 .reviews {
