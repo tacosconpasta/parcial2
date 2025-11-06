@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Docker Blog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/docker-icon.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        EL
+        <img src="../assets/icons/docker-icon.svg" />
+        BLOG
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li><a href="/aprender.html">Aprender</a></li>
+        <li><a href="/review.html">Reseña</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>El papel de Docker en Microservicios</h2>
+        <div class="post-container">
+          <article class="blog-post">
+            <div class="post-top">
+              <img
+                src="../assets/images/blogMiniaturas/blogMicro.png"
+                alt="Docker logo"
+              />
+
+              <h3 style="font-style: italic; padding: 1rem 2rem 2rem 2rem">
+                "Divide tus aplicaciones para evitar desastres"
+              </h3>
+            </div>
+            <div class="blog-content" style="padding: 0rem 2rem 2rem 2rem">
+              <p style="text-align: justify">
+                En arquitecturas de microservicios, Docker actúa como el tejido
+                conectivo que permite materializar la promesa de servicios
+                independientes y desplegables de forma autónoma. Cada
+                microservicio encapsulado en su propio contenedor opera como una
+                unidad coherente: su código, dependencias y configuración viajan
+                juntos, eliminando las fricciones que surgen cuando múltiples
+                servicios compiten por recursos o versiones de librerías en un
+                mismo host. Esta separación no es meramente técnica; es
+                organizacional. Equipos distintos pueden desplegar sus servicios
+                sin coordinación exhaustiva, reduciendo las dependencias que
+                tradicionalmente ralentizan el desarrollo distribuido.
+                <br />
+                <br />
+                Los contenedores en esta arquitectura se comportan como
+                ciudadanos de primera clase en un ecosistema dinámico. Un
+                servicio de autenticación, otro de procesamiento de pagos y uno
+                más de notificaciones pueden coexistir en el mismo clúster, cada
+                uno escalando según su demanda específica. Docker Compose para
+                entornos locales, o herramientas de orquestación como Kubernetes
+                en producción, permiten declarar las relaciones entre servicios:
+                qué puertos exponen, cómo se comunican, qué volúmenes persisten
+                datos. Esta declaratividad convierte la infraestructura en
+                código versionable, reproducible y auditable.
+                <br />
+                <br />
+                La ventaja de orquestrar contenedores para este patrón de
+                arquitectura de sistemas, sobre máquinas virtuales o físicas, es
+                sustancial. Iniciar un contenedor toma segundos frente a los
+                minutos de una máquina virtual; su huella de memoria es
+                fraccional porque comparten el kernel del sistema operativo
+                host. Esta eficiencia en términos de recursos, es extremadamente
+                valorada en el campo. Por ejemplo: en microservicios, donde se
+                tienen docenas de servicios ejecutándose simultáneamente, la
+                diferencia entre alojar cinco instancias por servidor físico o
+                50 contenedores es la frontera entre viabilidad económica y
+                desperdicio de recursos. Más allá de lo técnico, los
+                contenedores eliminan la ceremonia del aprovisionamiento. No hay
+                sistemas operativos que mantener individualmente, no hay
+                configuraciones manuales que replicar. El despliegue se reduce a
+                ejecutar una imagen; la eliminación, a detener un proceso. Esta
+                simplicidad operacional es lo que permite que las arquitecturas
+                de microservicios escalen, convirtiéndolas en el patrón más
+                popular de la década de los 20s.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Por: Raúl Villarreal (2025)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">
+        © 2025 El Blog<br />
+        © 2013-2021 Docker, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

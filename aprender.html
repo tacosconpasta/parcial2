@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Docker Blog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icons/docker-icon.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        EL
+        <img src="./assets/icons/docker-icon.svg" />
+        BLOG
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li><a href="/aprender.html">Aprender</a></li>
+        <li><a href="/review.html">Reseña</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>Recursos de Aprendizaje</h2>
+        <div class="blogs">
+          <article class="blog-post">
+            <iframe src="https://www.youtube.com/embed/YgHOhPalas0"></iframe>
+            <div class="blog-content">
+              <h3>Introducción a contenedores con Docker</h3>
+              <p>
+                Aprende los conceptos fundamentales de Docker y cómo empezar a
+                usar contenedores en tus proyectos.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Por: MiduDev & Gisela Torres (2025)
+              </p>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <iframe
+              src="https://www.youtube.com/embed/j1yQJDQtAso?si=h17ZwokETWIrdaYS"
+            ></iframe>
+            <div class="blog-content">
+              <h3>Cómo confeccionar un documento de Docker Compose</h3>
+              <p>
+                En este video del ingeniero, Jesús Matiz, se enseñan las bases
+                sobre las cuales se levantan las aplicaciones
+                multi-contenedores, utilizando Docker Compose. Es un excelente
+                recurso para comprender con mejor exactitud, que realizan
+                exactamente los ajustes de Docker Compose.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Por: Ing. Jesús Matiz (2020)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">
+        © 2025 El Blog<br />
+        © 2013-2021 Docker, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

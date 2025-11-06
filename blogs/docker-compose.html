@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Docker Blog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/docker-icon.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        EL
+        <img src="../assets/icons/docker-icon.svg" />
+        BLOG
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li><a href="/aprender.html">Aprender</a></li>
+        <li><a href="/review.html">Reseña</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>Automatización con Docker Compose</h2>
+        <div class="post-container">
+          <article class="blog-post">
+            <div class="post-top">
+              <img
+                src="../assets/images/blogMiniaturas/blogCompose.png"
+                alt="Docker logo"
+                style="object-fit: cover"
+              />
+
+              <h3 style="font-style: italic; padding: 1rem 2rem 2rem 2rem">
+                "Maneja todo con vista de águila"
+              </h3>
+            </div>
+            <div class="blog-content" style="padding: 0rem 2rem 2rem 2rem">
+              <p style="text-align: justify">
+                Docker Compose resuelve el problema de orquestar múltiples
+                contenedores que deben funcionar como un sistema cohesivo. En
+                lugar de ejecutar comandos individuales para cada servicio, por
+                ejemplo: Instalar python e iniciar una API en un lado, mientras
+                se descarga un servidor y se inicializa una base de datos en
+                otro, Compose permite declarar toda la arquitectura en un
+                archivo. Este documento especifica, al inicializar un
+                contenedor, qué servicios existen, cómo se conectan entre sí,
+                qué puertos exponen y qué volúmenes persisten. Un solo comando
+                levanta el ecosistema completo; otro lo detiene.
+                <br />
+                <br />
+                La utilidad de Compose entonces, reside en la conveniencia. En
+                entornos de desarrollo, se garantiza que todos los miembros del
+                equipo trabajen con la misma configuración que la
+                infraestructura a levantar en el despliegue, eliminando las
+                discrepancias que surgen de instalaciones manuales
+                inconsistentes. Esta capacidad de materializar y destruir
+                arquitecturas completas bajo demanda es la fortaleza de esta
+                herramienta de orquestación.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Por: Raúl Villarreal (2025)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">
+        © 2025 El Blog<br />
+        © 2013-2021 Docker, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
