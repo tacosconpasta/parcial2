@@ -289,9 +289,16 @@ section:last-child {
 /*Contenedor de blogs*/
 .blogs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   padding: 2rem;
+}
+
+/*Dejar de enseñar 2 blogs x fila, a 1, en móvi*/
+@media (max-width: 600px) {
+  .blogs {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*Cada artículo individual*/
@@ -305,11 +312,7 @@ section:last-child {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blog-post p {
-  text-align: left;
-}
-
-/*Efecto hover*/
+/*Hover en post*/
 .blog-post:hover {
   transform: translateY(-4px);
   box-shadow: 0px 8px 20px rgba(15, 23, 42, 0.55);
@@ -340,23 +343,24 @@ section:last-child {
 /*Texto de blog*/
 .blog-content p {
   color: var(--primary-color-300);
+  text-align: left;
   font-size: 1rem;
   line-height: 1.35rem;
 }
 
 /*Botón dentro del artículo*/
-.blog-content .primary-button {
-  background-color: var(--primary-color-950);
+.blog-content > .primary-button-alternate {
+  background-color: var(--primary-color-50);
+  color: var(--primary-color-800);
   width: fit-content;
   padding: 0.5rem 1.25rem;
   border-radius: 0.5rem;
   text-align: center;
-  transition: background-color 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.blog-content .primary-button:hover {
-  background-color: var(--primary-color-700);
-  font-weight: 600;
+.blog-content .primary-button-alternate:hover {
+  background-color: var(--primary-color-100);
 }
 
 /*Pie de Página*/
