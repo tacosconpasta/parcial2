@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Docker Blog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/docker-icon.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        EL
+        <img src="../assets/icons/docker-icon.svg" />
+        BLOG
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li><a href="/aprender.html">Aprender</a></li>
+        <li><a href="/review.html">Reseña</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>Introducción a Docker</h2>
+        <div class="post-container">
+          <article class="blog-post">
+            <div class="post-top">
+              <img
+                src="../assets/images/blogMiniaturas/blogIntro.png"
+                alt="Docker logo"
+              />
+              <h3 style="font-style: italic">
+                "Despliegue de aplicaciones en segundos"
+              </h3>
+            </div>
+            <div class="blog-content" style="padding: 0rem 2rem 2rem 2rem">
+              <p style="text-align: justify">
+                Docker es una plataforma que permite empaquetar aplicaciones
+                junto con todas sus dependencias en unidades aisladas y
+                portables. La promesa fundamental radica en eliminar el clásico
+                "en mi máquina funciona": al emular el entorno de ejecución
+                completo, garantizas que tu aplicación se comportará
+                idénticamente en desarrollo, pruebas y producción. Esta
+                consistencia no es trivial; resuelve uno de los problemas más
+                persistentes en el ciclo de vida del software contemporáneo,
+                provenientes de la etapa del despliegue. <br />
+                <br />
+                La utilización de Docker gira en torno a "imágenes", similar a
+                planos de un edificio, y su ejecución (cuantos edificios se
+                construyen). Una imagen es una plantilla inmutable que contiene
+                una aplicación y; al ejecutarla, se obtiene un contenedor, una
+                instancia viva y aislada de esa imagen. Este aislamiento opera a
+                nivel de sistema operativo, compartiendo el kernel del host pero
+                manteniendo procesos, redes y sistemas de archivos separados.
+                <br />
+                <br />
+                Docker simplifica la orquestación de estos contenedores mediante
+                herramientas que abstraen la complejidad subyacente, permitiendo
+                declarar cómo debe ejecutarse tu sistema en lugar de
+                configurarlo manualmente cada vez. Es importante aclarar que
+                "Docker" y el término "contenedores" no son exactamente iguales.
+                Los contenedores son una tecnología de virtualización ligera que
+                existía antes de Docker; la innovación fue democratizar su uso.
+                Docker toma conceptos específicos y los envuelve en una interfaz
+                de programación accesible, a eso, se le agrega un ecosistema de
+                paquetes/imagenes completo. Cuando se utiliza Docker, se emplean
+                contenedores; pero, también se adoptan las herramientas que trae
+                consigo, una comunidad y un conjunto de convenciones. Esta capa
+                de abstracción es lo que transforma una herramienta técnica en
+                una práctica estándar de la industria.
+                <br />
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Por: Raúl Villarreal (2025)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">
+        © 2025 El Blog<br />
+        © 2013-2021 Docker, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

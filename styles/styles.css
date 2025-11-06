@@ -370,6 +370,23 @@ iframe {
   border: none;
 }
 
+/*--BLOG SINGULAR--*/
+.post-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.post-top {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+/*Subtitulo*/
+.post-container h3
+
 /*--RESEÑA--*/
 .reviews {
   display: flex;
