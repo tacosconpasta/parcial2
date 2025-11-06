@@ -363,6 +363,13 @@ section:last-child {
   background-color: var(--primary-color-100);
 }
 
+/*--APRENDER--*/
+iframe {
+  height: 18rem;
+  width: auto;
+  border: none;
+}
+
 /*Pie de Página*/
 footer {
   display: flex;
