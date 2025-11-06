@@ -257,41 +257,6 @@ section:last-child {
   }
 }
 
-/* Section setup */
-.scroll-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* The icon */
-.icon {
-  position: absolute;
-  left: 0;
-  font-size: 4rem;
-  animation: move-icon 1 linear both;
-  animation-timeline: scroll-section-timeline;
-}
-
-/* Define the scroll timeline */
-@scroll-timeline scroll-section-timeline {
-  source: auto;
-  orientation: block;
-  scroll-offsets: (start 0%, end 100%);
-}
-
-/* Define the animation path */
-@keyframes move-icon {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(100vw - 5rem));
-  }
-}
-
 .primary-button {
   background-color: var(--primary-color-900);
   color: var(--primary-color-50);
